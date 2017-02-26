@@ -10,47 +10,47 @@
     <body>
 <trans-unit id="1" xml:space="preserve">
   <source xml:lang="en-US">default</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">default</target>
 </trans-unit>
 <trans-unit id="2" xml:space="preserve">
   <source xml:lang="en-US">Test</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Test</target>
 </trans-unit>
 <trans-unit id="3" xml:space="preserve">
   <source xml:lang="en-US">/test/</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">/de/test/</target>
 </trans-unit>
 <trans-unit id="4" xml:space="preserve">
   <source xml:lang="en-US">en</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">de</target>
 </trans-unit>
 <trans-unit id="5" xml:space="preserve">
   <source xml:lang="en-US">Test</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Test</target>
 </trans-unit>
 <trans-unit id="6" xml:space="preserve">
   <source xml:lang="en-US">Why am I here?</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Wieso bin ich hier?</target>
 </trans-unit>
 <trans-unit id="7" xml:space="preserve">
   <source xml:lang="en-US">Am I an amazing test? This could go on and on and on..</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Bin ich ein super Test? Dies könnte so weitergehen..</target>
 </trans-unit>
 <trans-unit id="8" xml:space="preserve">
   <source xml:lang="en-US">Why?</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Wieso?</target>
 </trans-unit>
 <trans-unit id="9" xml:space="preserve">
   <source xml:lang="en-US">I'm trying to test md2xliff. We used it for MozActivate and had some problems. Can I figure those out?</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Ich versuche md2xliff zu testen. Wir haben dies für MozActivate verwendet und hatten einige Probleme. Können wir rausfinden wie dies wirklich funktioniert?</target>
 </trans-unit>
 <trans-unit id="10" xml:space="preserve">
   <source xml:lang="en-US">Just a list</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Nur eine Liste</target>
 </trans-unit>
 <trans-unit id="11" xml:space="preserve">
   <source xml:lang="en-US">Hi!</source>
-  <target xml:lang="de-CH"></target>
+  <target xml:lang="de-CH">Hallo!</target>
 </trans-unit>
 <trans-unit id="12" xml:space="preserve">
   <source xml:lang="en-US">How are you?</source>

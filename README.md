@@ -27,3 +27,10 @@ Observations:
 * Apart from weird indetation in the XML file, the extracted strings look good (easily fixable, Pontoon would even do that for us at the end..)
 
 So far so good!
+
+Translation of initial text
+----
+
+Now the initial text get's translated. I didn't use any tool for this, I just edited the xliff manually. This leads to an updated xliff (as Pontoon would do it), and our content is not updated yet. I've taken care to not break Jekylls (see above, this might be a possible blocker).
+
+Es sind jedoch noch nicht alle Strings übersetzt.
