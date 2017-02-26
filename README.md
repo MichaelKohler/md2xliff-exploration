@@ -101,6 +101,6 @@ Idea: as our structure hasn't changed, we still have the same IDs in the xlf. We
 TODO - not tested yet
 ----
 
-* What happens if we delete whole lists?
-* What happens if we do a rewrite of a part of the text?
-* What if we change the structure of the text and add title in between?
+* What happens if we delete whole lists? What happens to the skeleton? Can the extraction possibly match the different parts of the xliff it needs to update?
+* What happens if we do a rewrite of a part of the text? What happens to the skeleton? Can the extraction possibly match the different parts of the xliff it needs to update?
+* What if we change the structure of the text and add title in between? What happens to the skeleton? Can the extraction possibly match the different parts of the xliff it needs to update?
