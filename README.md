@@ -3,6 +3,10 @@ test-md2xliff
 
 I'm trying to figure out if we really can use md2xliff for activate.mozilla.community. We've had several problems in the past and I'm trying to do a real use-case in this repository. I will write all commands I'm running and every step I take in this README and will commit after every step to be able to show results.
 
+The goal for using md2xliff is that we have Markdown files which are the base of all content. We want to make it easier for localizers to translate these files. There is [Pontoon](https://pontoon.mozilla.org) which would have a great interface to translate strings and add them back to any repository. This obviously doesn't handle markdown since markdown is not really used for translations. Our best option would be [xliff](https://en.wikipedia.org/wiki/XLIFF), which is a well-used standard.
+
+This repository tries some stuff around the md2xliff script. If that will not work (which is possible), we will also go into further detail regarding other possibilities to have well-known string files.
+
 1. Initial commit
 ---
 
