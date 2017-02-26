@@ -3,12 +3,12 @@ test-md2xliff
 
 I'm trying to figure out if we really can use md2xliff for activate.mozilla.community. We've had several problems in the past and I'm trying to do a real use-case in this repository. I will write all commands I'm running and every step I take in this README and will commit after every step to be able to show results.
 
-Initial commit
+1. Initial commit
 ---
 
 I've set up two scripts to do md -> xliff (extract) and xliff -> md (reconstruct). I've additionally created a ```test.md``` file which holds the first iteration of our content.
 
-Do initial extraction
+2. Do initial extraction
 ---
 
 Now we are doing the initial extraction to an xliff file. We are using the ```test.md``` (in English) to create the xliff to translate to de-CH.
@@ -28,14 +28,14 @@ Observations:
 
 So far so good!
 
-Translation of initial text
+3. Translation of initial text
 ----
 
 Now the initial text get's translated. I didn't use any tool for this, I just edited the xliff manually. This leads to an updated xliff (as Pontoon would do it), and our content is not updated yet. I've taken care to not break Jekylls (see above, this might be a possible blocker).
 
 Es sind jedoch noch nicht alle Strings übersetzt.
 
-Reconstruction
+4. Reconstruction
 ----
 
 Now we want to update our markdown file for German.
@@ -49,3 +49,58 @@ Observations:
 * Reconstruction worked perfectly fine, we now have all text in German apart from the missing translations which are still English
 
 So far so good as well!
+
+5a. English text gets updated
+----
+
+Now we are updating a single paragraph in English and we'll run an extraction again. This is the first case we had problems with MozActivate. Let's see how this turns out.
+
+```
+<edit test.md file>
+./updateXLFFromMD.sh
+```
+
+which specifically does
+
+```
+node_modules/md2xliff/bin/extract de-CH/test.md locales/de-CH/test.xlf locales/de-CH/test.skl.md en-US de-CH
+```
+
+Observations:
+* This didn't work. We now have the already translated strings as <source> in the xliff and not our en-US strings..
+
+Example:
+
+```
+<trans-unit id="7" xml:space="preserve">
+  <source xml:lang="en-US">Bin ich ein super Test? Dies könnte so weitergehen..</source>
+  <target xml:lang="de-CH"></target>
+</trans-unit>
+```
+
+This definitely makes sense, since it can't possibly know what I want to take as base. We need to find another way to do this. This will be step 5b.
+
+Step 5a is not in the repository, as I did step 5b at the same time.
+
+5b. Use EN test.md as base
+---
+
+We most certainly need to use the original test.md as a base. Let's try this.
+
+```
+node_modules/md2xliff/bin/extract test.md locales/de-CH/test.xlf locales/de-CH/test.skl.md en-US de-CH
+```
+
+This looks better in terms of the <source>, but we have lost all de-CH translations in the <target>. It basically created a new xlf file from what it had. We need to look further into the code on how we could do an update.
+
+Questions to find an answer:
+* How can we do updates at extraction?
+
+Idea: as our structure hasn't changed, we still have the same IDs in the xlf. We could write a script that takes the previous xlf and puts the old <target> strings in it. For this we would need to make sure that Pontoon picks up the change in the <source> so it shows the localizer that it changed. As this is (hopefully) as Pontoon works, this shouldn't be a problem. However, that would most probably only work if there are no structural changes in the skeleton. This needs to be tested further (see next section covering what hasn't been tested yet).
+
+TODO - not tested yet
+----
+
+* What happens if we delete whole lists?
+* What happens if we do a rewrite of a part of the text?
+* What if we change the structure of the text and add title in between?

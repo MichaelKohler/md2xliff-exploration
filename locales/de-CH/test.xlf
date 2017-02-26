@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="de-CH/test.md"
+  <file original="test.md"
     source-language="en-US" target-language="de-CH" datatype="markdown">
     <header>
       <skl>
@@ -10,47 +10,47 @@
     <body>
 <trans-unit id="1" xml:space="preserve">
   <source xml:lang="en-US">default</source>
-  <target xml:lang="de-CH">default</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="2" xml:space="preserve">
   <source xml:lang="en-US">Test</source>
-  <target xml:lang="de-CH">Test</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="3" xml:space="preserve">
   <source xml:lang="en-US">/test/</source>
-  <target xml:lang="de-CH">/de/test/</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="4" xml:space="preserve">
   <source xml:lang="en-US">en</source>
-  <target xml:lang="de-CH">de</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="5" xml:space="preserve">
   <source xml:lang="en-US">Test</source>
-  <target xml:lang="de-CH">Test</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="6" xml:space="preserve">
   <source xml:lang="en-US">Why am I here?</source>
-  <target xml:lang="de-CH">Wieso bin ich hier?</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="7" xml:space="preserve">
-  <source xml:lang="en-US">Am I an amazing test? This could go on and on and on..</source>
-  <target xml:lang="de-CH">Bin ich ein super Test? Dies könnte so weitergehen..</target>
+  <source xml:lang="en-US">Am I an amazing test? Because I keep changing stuff!</source>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="8" xml:space="preserve">
   <source xml:lang="en-US">Why?</source>
-  <target xml:lang="de-CH">Wieso?</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="9" xml:space="preserve">
   <source xml:lang="en-US">I'm trying to test md2xliff. We used it for MozActivate and had some problems. Can I figure those out?</source>
-  <target xml:lang="de-CH">Ich versuche md2xliff zu testen. Wir haben dies für MozActivate verwendet und hatten einige Probleme. Können wir rausfinden wie dies wirklich funktioniert?</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="10" xml:space="preserve">
   <source xml:lang="en-US">Just a list</source>
-  <target xml:lang="de-CH">Nur eine Liste</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="11" xml:space="preserve">
   <source xml:lang="en-US">Hi!</source>
-  <target xml:lang="de-CH">Hallo!</target>
+  <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="12" xml:space="preserve">
   <source xml:lang="en-US">How are you?</source>
