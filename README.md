@@ -34,3 +34,18 @@ Translation of initial text
 Now the initial text get's translated. I didn't use any tool for this, I just edited the xliff manually. This leads to an updated xliff (as Pontoon would do it), and our content is not updated yet. I've taken care to not break Jekylls (see above, this might be a possible blocker).
 
 Es sind jedoch noch nicht alle Strings übersetzt.
+
+Reconstruction
+----
+
+Now we want to update our markdown file for German.
+
+```
+./updateMDFromXLF.sh
+```
+
+Observations:
+* Fallback for the two empty strings worked
+* Reconstruction worked perfectly fine, we now have all text in German apart from the missing translations which are still English
+
+So far so good as well!

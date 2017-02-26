@@ -1,22 +1,22 @@
 ---
 layout: default
 title:  "Test"
-permalink: /test/
-lang: en
+permalink: /de/test/
+lang: de
 ---
 
 # Test
 
-Why am I here?
+Wieso bin ich hier?
 
-Am I an amazing test? This could go on and on and on..
+Bin ich ein super Test? Dies könnte so weitergehen..
 
-## Why?
+## Wieso?
 
-I'm trying to test md2xliff. We used it for MozActivate and had some problems. Can I figure those out?
+Ich versuche md2xliff zu testen. Wir haben dies für MozActivate verwendet und hatten einige Probleme. Können wir rausfinden wie dies wirklich funktioniert?
 
-## Just a list
+## Nur eine Liste
 
-1. Hi!
+1. Hallo!
 2. How are you?
 3. I'm doing great!
