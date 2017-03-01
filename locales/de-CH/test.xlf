@@ -53,11 +53,7 @@
   <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="12" xml:space="preserve">
-  <source xml:lang="en-US">How are you?</source>
-  <target xml:lang="de-CH"></target>
-</trans-unit>
-<trans-unit id="13" xml:space="preserve">
-  <source xml:lang="en-US">I'm doing great!</source>
+  <source xml:lang="en-US">How are you? I'm very good!</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>
     </body>

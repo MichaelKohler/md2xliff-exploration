@@ -108,3 +108,32 @@ TODO - not tested yet
 * What happens if we delete whole lists? What happens to the skeleton? Can the extraction possibly match the different parts of the xliff it needs to update?
 * What happens if we do a rewrite of a part of the text? What happens to the skeleton? Can the extraction possibly match the different parts of the xliff it needs to update?
 * What if we change the structure of the text and add title in between? What happens to the skeleton? Can the extraction possibly match the different parts of the xliff it needs to update?
+
+6. Reading code
+---
+
+After reading the "extract" code of md2xliff, there is no code meant to update an already existing xliff. Proof: https://github.com/cataria-rocks/md2xliff/blob/master/lib/extract.js#L28
+
+Therefore we can only hope that a manual script would help us out. Let's further explore that possibility with doing what we put aside above (TODO).
+
+7. Experiment with structural changes
+---
+
+Now let's play around with structural changes. From now on we will pretend that the whole "update" works according to the following algorithm:
+
+1. Save old xliff file
+2. Generate new xliff file with the "extract" binary
+3. Take every ```trans-unit``` from the old file and copy every ```<target>``` to the new file (matched through id attribute)
+
+I would suspect that this does only work as long as the ID (therefore the structure) doesn't change.
+
+7a. Change list in original
+---
+
+I've removed the third point of the list and changed the string for the second bullet point. Let's see.
+
+```
+node_modules/md2xliff/bin/extract test.md locales/de-CH/test.xlf locales/de-CH/test.skl.md en-US de-CH
+```
+
+This just removes the third bullet point in the skeleton. We can still match IDs and reconstruct it that way. That would work.

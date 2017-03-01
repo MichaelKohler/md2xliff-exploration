@@ -18,5 +18,4 @@ I'm trying to test md2xliff. We used it for MozActivate and had some problems. C
 ## Just a list
 
 1. Hi!
-2. How are you?
-3. I'm doing great!
+2. How are you? I'm very good!
