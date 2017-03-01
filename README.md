@@ -137,3 +137,23 @@ node_modules/md2xliff/bin/extract test.md locales/de-CH/test.xlf locales/de-CH/t
 ```
 
 This just removes the third bullet point in the skeleton. We can still match IDs and reconstruct it that way. That would work.
+
+7b. Change two paragraphs
+---
+
+Now let's change two paragraph's the same way. Can we still observe a good change in the skeleton?
+
+```
+node_modules/md2xliff/bin/extract test.md locales/de-CH/test.xlf locales/de-CH/test.skl.md en-US de-CH
+```
+
+I've removed a paragraph and changed the text of the one paragraph that was left. This seems good, since the IDs perfectly well shifted, right?
+
+Nope, since the IDs shifted, we have no way anymore to map the old strings from the old translated xliff to the new xliff to use the already translated strings.. For example previously the translated string "Why?" was ID 8, now it is ID 7. This means we can't just take the old xliff, take ID=7 and replace the <target> node with the already existing translation.
+
+Now we have a conclusion!
+---
+
+This, together with the fact that the replacement algorithm is the only thing I could come up with, tells me that there is no good way to solve our initial problem.. :(
+
+This gets worse when whole texts are rewritten...

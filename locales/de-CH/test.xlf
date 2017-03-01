@@ -29,30 +29,26 @@
   <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="6" xml:space="preserve">
-  <source xml:lang="en-US">Why am I here?</source>
+  <source xml:lang="en-US">Why, what?</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>
 <trans-unit id="7" xml:space="preserve">
-  <source xml:lang="en-US">Am I an amazing test? Because I keep changing stuff!</source>
-  <target xml:lang="de-CH"></target>
-</trans-unit>
-<trans-unit id="8" xml:space="preserve">
   <source xml:lang="en-US">Why?</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>
-<trans-unit id="9" xml:space="preserve">
+<trans-unit id="8" xml:space="preserve">
   <source xml:lang="en-US">I'm trying to test md2xliff. We used it for MozActivate and had some problems. Can I figure those out?</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>
-<trans-unit id="10" xml:space="preserve">
+<trans-unit id="9" xml:space="preserve">
   <source xml:lang="en-US">Just a list</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>
-<trans-unit id="11" xml:space="preserve">
+<trans-unit id="10" xml:space="preserve">
   <source xml:lang="en-US">Hi!</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>
-<trans-unit id="12" xml:space="preserve">
+<trans-unit id="11" xml:space="preserve">
   <source xml:lang="en-US">How are you? I'm very good!</source>
   <target xml:lang="de-CH"></target>
 </trans-unit>

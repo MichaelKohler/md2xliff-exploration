@@ -7,9 +7,7 @@ lang: en
 
 # Test
 
-Why am I here?
-
-Am I an amazing test? Because I keep changing stuff!
+Why, what?
 
 ## Why?
 
