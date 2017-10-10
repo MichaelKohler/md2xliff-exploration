@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "",
   "dependencies": {
-    "md2xliff": "MichaelKohler/md2xliff#master"
-  }
+    "md2xliff": "MichaelKohler/md2xliff#master",
+    "snyk": "^1.42.5"
+  },
+  "snyk": true
 }
